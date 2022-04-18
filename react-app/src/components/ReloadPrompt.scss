@@ -1,29 +1,43 @@
 .ReloadPrompt-container {
-    padding: 0;
-    margin: 0;
-    width: 0;
-    height: 0;
+    // background: magenta;
+
 }
 .ReloadPrompt-toast {
-    position: fixed;
-    right: 0;
-    bottom: 0;
+    // position: fixed;
+    // right: 0;
+    // bottom: 0;
     margin: 16px;
     padding: 12px;
-    border: 1px solid #8885;
+    // border: 1px solid #8885;
     border-radius: 4px;
     z-index: 1;
     text-align: left;
-    box-shadow: 3px 4px 5px 0 #8885;
-    background-color: white;
+    // box-shadow: 3px 4px 5px 0 #8885;
+    background-color: #132d4b;
+    color: #E9EEF2;
 }
+
 .ReloadPrompt-toast-message {
     margin-bottom: 8px;
 }
-.ReloadPrompt-toast-button {
-    border: 1px solid #8885;
-    outline: none;
-    margin-right: 5px;
-    border-radius: 2px;
-    padding: 3px 10px;
+.ReloadPrompt-toast-buttons {
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+        color: #E9EEF2;
+        background: #205A80;
+        // border: 1px solid #8885;
+        border: 0;
+        outline: none;
+        margin-right: 5px;
+        border-radius: 2px;
+        padding: 3px 10px;
+        font-weight: 300;
+        padding: 8px 16px;
+
+        &.secondary {
+            background: transparent;
+        }
+    }
 }

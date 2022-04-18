@@ -93,7 +93,6 @@ function App() {
     <div className="app-wrapper">
     <div className="app-left" />
     <div className="app">
-      <ReloadPrompt />
       <div className="options">
           <h3 onClick={() => setShowTypeSelector(v => !v)}>
             <FontAwesomeIcon rotate={showTypeSelector ? 45 : 0} fixedWidth icon={faCaretRight} />
@@ -131,7 +130,7 @@ function App() {
           </div>
       )}
       </div>
-
+      <ReloadPrompt />
     </div>
     <div className="app-right" />
     </div>
