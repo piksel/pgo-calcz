@@ -1,0 +1,36 @@
+label.toggle {
+    user-select: none;
+    cursor: pointer;
+    // background: #ccc;
+    display: inline-block;
+
+    .false-label, .true-label {display: inline-block;     padding: 4px 8px; font-size: 12px;}
+    .false-label {border-radius: 10px 0 0 10px; padding-left: 12px}
+    .true-label {border-radius: 0 10px 10px 0; padding-right: 12px}
+
+    // &.checked {
+      // .true-label {font-weight: bold;}
+    //   .false-label {opacity: .5;}
+    // }
+    // &:not(.checked) {
+    //   .true-label {opacity: .5;}
+      // .false-label {font-weight: bold;}
+  
+    // }
+
+    &.checked .false-label, &:not(.checked) .true-label {
+        background: #0C1E31;
+        color: #4C7B99
+    }
+    
+    &.checked .true-label, &:not(.checked) .false-label {
+        background: #205A80;
+        color: #E9EEF2;
+    }
+  
+    input[type=checkbox] {
+      display: none;
+    }
+    svg {margin-right: 1ch;}
+  }
+  
