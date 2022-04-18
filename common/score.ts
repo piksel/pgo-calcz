@@ -19,7 +19,7 @@ export const getGrade = (score: number) => {
   export const getScore = (attack: number[], defence: number[]) => {
     const minOffset = 2.4;
     const midOffset = 0;
-    const scale = attack.length > 1 ? 1 : 2;
+    const scale = 2;// attack.length > 1 ? 1 : 2;
 
     const sumScore = combineScores(attack) - combineScores(defence);
 
@@ -67,7 +67,7 @@ const debugScores = () => {
   const allScores = types.flatMap((_, a) => 
   types.map((_, b) => {
     const ef = getEffectiveness([a, b]);
-    const [min, max] = ef.reduce<[number, number]>(([pmin, pmax], c, i) => 
+    const [min, max] = ef.reduce(([pmin, pmax]: [number, number], c, i) => 
     [
       (c.score < ef[pmin].score) ? i : pmin, 
       (c.score > ef[pmax].score) ? i : pmax
@@ -77,7 +77,7 @@ const debugScores = () => {
   )
 );
 
-const [imin, imax] = allScores.reduce<[number, number]>(([pmin, pmax], c, i) => 
+const [imin, imax] = allScores.reduce(([pmin, pmax]: [number, number], c, i) => 
   [
     (c.min.score < allScores[pmin].min.score) ? i : pmin, 
     (c.max.score > allScores[pmax].max.score) ? i : pmax
