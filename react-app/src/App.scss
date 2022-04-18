@@ -6,6 +6,7 @@ $bg-grad-bot: #060F19;
 body {
   font-family: 'Roboto', sans-serif;
   background: linear-gradient($bg-grad-top, $bg-grad-bot);
+  margin: 0;
 }
 
 .App-logo {
