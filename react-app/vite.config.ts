@@ -10,7 +10,7 @@ export default defineConfig({
     VitePWA({
       manifest: {
         "short_name": "PGO Calcz",
-        "name": "Pokemon GO battle type effictiveness calculator",
+        "name": "Pokémon GO Battle Calculator",
         "icons": [
           {
             "src": "favicon.ico",
@@ -30,7 +30,7 @@ export default defineConfig({
         ],
         // "start_url": ".",
         "display": "standalone",
-        "theme_color": "#E9EEF2",
+        "theme_color": "#132E4C",
         "background_color": "#132E4C"
       },
       includeAssets: ['logo.svg', 'favicon.ico', 'logo192.png', 'logo512.png', 'robots.txt'], 

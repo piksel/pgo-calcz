@@ -20,7 +20,7 @@
     //     "@pgocalc/*": ["../*"]
     // }
   },
-  "include": ["src", "node_modules/vite-plugin-pwa/client.d.ts"],
+  "include": ["src", "../node_modules/vite-plugin-pwa/client.d.ts"],
   // "exclude": ["vite.config.ts"],
   "references": [{ "path": "./tsconfig.node.json" }, { "path": "../common" } ]
 }

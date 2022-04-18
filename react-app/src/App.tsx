@@ -5,6 +5,7 @@ import { getEffectiveness, getGrade, getScore, TypeEffectiveness } from '@pgocal
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Toggle, TypeSelector } from './components';
 import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
+import ReloadPrompt from './components/ReloadPrompt';
 
 const fmtEffect = (factor: number) => (factor*100).toFixed(0) + "%";
 
@@ -92,6 +93,7 @@ function App() {
     <div className="app-wrapper">
     <div className="app-left" />
     <div className="app">
+      <ReloadPrompt />
       <div className="options">
           <h3 onClick={() => setShowTypeSelector(v => !v)}>
             <FontAwesomeIcon rotate={showTypeSelector ? 45 : 0} fixedWidth icon={faCaretRight} />

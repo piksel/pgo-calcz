@@ -4,5 +4,5 @@
     "module": "esnext",
     "moduleResolution": "node"
   },
-  "include": ["vite.config.ts"]
+  "include": ["vite.config.ts", "../node_modules/vite-plugin-pwa/client.d.ts"]
 }
