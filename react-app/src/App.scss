@@ -173,6 +173,12 @@ body {
   }
 }
 
+.effectiveness {
+  display: flex;
+  label.faded {
+    opacity: .4;
+  }
+}
 
 .type-badge {
   border-radius: 3px;
