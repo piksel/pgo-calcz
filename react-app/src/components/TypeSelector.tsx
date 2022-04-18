@@ -2,7 +2,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useCallback } from "react";
 
-import { colFgDark, types, faIcons } from "../pokedata";
+import { types, faIcons } from "@pgocalc/common/pokedata";
 
 interface Props {selected: number[], onChange: (_: (cv: number[])=>number[])=>void, dualType: boolean}
 export const TypeSelector: React.FC<Props> = (props) => {
