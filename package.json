@@ -14,6 +14,7 @@
   "scripts": {
     "react": "yarn workspace @pgocalc/react-app",
     "common": "yarn workspace @pgocalc/common",
-    "svelte": "yarn workspace @pgocalc/svelte-app"
+    "svelte": "yarn workspace @pgocalc/svelte-app",
+    "build-react-app": "yarn common build && yarn react build"
   }
 }
